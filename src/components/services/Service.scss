@@ -1,0 +1,102 @@
+.service-card {
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+}
+.service-card h4 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+
+}
+/* When you mouse over the container, fade in the overlay icon*/
+.container#service:hover .overlay {
+  opacity: 1;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container#service{
+  position: relative;
+  width: 100%;
+  color: #000;
+  padding-bottom: 100px;
+}
+
+.service {
+  /* background: linear-gradient(90deg, rgba(61,0,222,1) 0%, rgba(255,0,0,1) 100%); */
+  background-color: whitesmoke;
+  padding-top: 50px;
+}
+.service img {
+  width: 100%;
+}
+
+.service-imgbx {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-border-radius: 30px;
+}
+
+.service-imgbx::before {
+  content: "";
+  background: linear-gradient(145deg, rgba(255,116,2) 0%, rgba(255,0,0,1) 100%);
+  /*opacity: 0.85;
+  */position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.service-imgbx:hover::before {
+  height: 100%;
+}
+.service-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.service-imgbx:hover .service-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.service-txtx h3 {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+  color: white;
+}
+.service-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  color: white;
+
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}

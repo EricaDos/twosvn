@@ -6,8 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
 }
+
 
 *,
 ::after,
@@ -18,27 +18,45 @@
 }
 
 body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  overflow: hidden;
-  font-family: "DM Sans", sans-serif;
-  height: 100vh;
+  padding: 5px;
+  line-height: normal;
+  font-family: 'Akkordeon', sans-serif !important;
+}
+
+p, a, li, button, ul,span {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
   width: 100%;
-  background-color: var(--white-10);
-  position: fixed;
+  height: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
 }
 
-p {
-  margin: 0;
-}
 
 .button {
   font-weight: 400;
@@ -120,5 +138,12 @@ p {
   .spinner {
     width: 30%;
     transform: none;
+  }
+}
+
+@media (min-width: 768px){
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
   }
 }

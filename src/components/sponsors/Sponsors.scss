@@ -1,0 +1,89 @@
+/************ Sponsor Css ************/
+
+.sponsor p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+  text-align: center;
+
+}
+
+.sponsor {
+  padding: 0 0 50px 0;
+  background-color: #667;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sponsor {
+  width: 6%;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.row#sponsors img {
+  width: 16%;
+  top: 50%;
+  left: 50%;
+}
+.sponsor p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+.sponsors-bx img {
+  width: 13%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.sponsors-bx img#small {
+  width: 8%;
+  height: 100%;
+}
+.sponsors-bx img#smaller {
+  width: 5%;
+  height: 100%;
+}
+/************ Feedback Css ************/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  border-radius: 44px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+
+}
+.sponsors-bx {
+
+  text-align: center;
+  align-items: center;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgb(255, 157, 0);
+}
