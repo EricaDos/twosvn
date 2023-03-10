@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import { AppRouter } from './routes';
 import './App.scss';
-
+export const APP_ENVIRONMENT = 'local';
 const App = () => {
   return (
     <>

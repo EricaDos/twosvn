@@ -1,5 +1,6 @@
 import { floor, random } from 'lodash';
 import { avatarColors } from './static.data';
+import { APP_ENVIRONMENT } from '@services/axios';
 
 export class Utils {
   static avatarColor() {
@@ -24,5 +25,15 @@ export class Utils {
     context.fillText(text, canvas.width / 2, canvas.height / 2);
 
     return canvas.toDataURL('image/png');
+  }
+
+  static appEnvironment() {
+    if (APP_ENVIRONMENT === 'local') {
+      return 'LOCAL';
+    } else if (APP_ENVIRONMENT === 'development') {
+      return 'DEV';
+    } else if (APP_ENVIRONMENT === 'staging') {
+      return 'STG';
+    }
   }
 }
